@@ -1,47 +1,35 @@
-# Astro Starter Kit: Minimal
+# Ocean Calculator (Astro)
 
-```sh
-npm create astro@latest -- --template minimal
-```
+A simple, modern calculator web app built with Astro. It supports addition, subtraction, multiplication, and division. The UI follows the Ocean Professional theme with blue (#2563EB) and amber (#F59E0B) accents, minimalist surfaces, rounded corners, subtle shadows, and smooth transitions.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## Quickstart
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+From this folder:
 
-## 🚀 Project Structure
+- Install: `npm install`
+- Run dev: `npm run dev` (served at localhost:3000 or as configured)
+- Build: `npm run build`
+- Preview: `npm run preview`
 
-Inside of your Astro project, you'll see the following folders and files:
+## Features
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- Core operations: +, −, ×, ÷
+- Responsive layout with a central calculator panel
+- Keyboard support: digits, operators (+ − * /), Enter/Equals, Escape to clear, % for percent, and `.` for decimal
+- Graceful divide-by-zero handling
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Structure
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- `src/pages/index.astro` — App entry; renders the calculator within the site layout
+- `src/components/Calculator.astro` — Calculator UI, styles, and logic
+- `src/layouts/Layout.astro` — Base HTML, theme variables, and optional dark mode toggle
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Theming
 
-## 🧞 Commands
+- Background: #f9fafb
+- Surface: #ffffff
+- Text: #111827
+- Primary: #2563EB
+- Secondary: #F59E0B
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+All styles are embedded and require no external CSS frameworks.
